@@ -1,0 +1,107 @@
+body {
+	background-color: white;
+	position: relative;
+}
+#topbar {
+	/*width: 100%;*/
+	height: 10%;
+	background-color:  rgba(68, 82, 145, 0.83);
+	border: solid black 1px;
+	order:2;
+	font-size: 100%;
+}
+.menubar {
+	height:100%;
+	width: 50px;
+	background-color: gray;
+	border-right: solid black 1px;
+	position: fixed;
+	order: 1;
+}
+.menubar p {
+	font-size: 40px;
+	font-family: 'Dosis', sans-serif;
+	left: 0px;
+	text-align: center;
+	border: solid black 4px;
+}
+.menulist {
+	height:100%;
+	width: 100px;
+	background-color: rgba(81, 94, 152, 0.80);
+	/*float: left;*/
+	left: -100px;
+	position: fixed;
+	order: -1;
+	-moz-box-shadow: 10px 10px 5px #888888;
+}
+.menuitem {
+	/*width: 100%;*/
+	height: 50px;
+	display: block;
+	
+}
+.menuitem p {
+	text-align: center;
+	font-family: 'Dosis', sans-serif;
+	height: 100%;
+	vertical-align: middle;
+}
+.menuitem:hover {
+	background-color: white;
+}
+a {
+	text-decoration: none;
+}
+.content {
+	width: 100%;
+	height: 100%;
+	background-color: rgb(232, 232, 232);
+	/*position: fixed;*/
+	border-left: solid black 1px;
+	display: flex;
+	background-color: white;
+}
+
+.slide-container {
+	width: 100%;
+	height: 100%;
+	order: 2;
+	display:flex;
+	flex-wrap: wrap;
+	align-content: flex-start;
+	position: relative;
+	padding: 5%;
+}
+.slide {
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+	border: solid black 2px;
+
+	width: 30%;
+	height: 30%;
+}
+.slide-test{
+	padding: 10px;
+	background-color: white;
+	border-radius: 5px;
+	border: solid black 2px;
+	background-image: url(../img/linds.jpg);
+	background-size: length 100%;
+	width: 30%;
+	height: 30%;
+}
+.slide img {
+	order: 1;
+	width: 100%;
+	position: relative;
+	
+}
+#icondiv {
+	width: 100%;
+	height: 15%;
+	font-family: 'Dosis', sans-serif;
+	border: dashed green 2px;
+	border-radius: 3px;
+}
