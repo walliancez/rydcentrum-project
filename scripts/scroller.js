@@ -35,9 +35,7 @@ function main(){
 	});
 	//TODO: Ta bort denna och ersätt med
 	//a taggar i html filerna
-	$('.menuitem').click(function(){
-		window.location="http://www.google.com";
-	});
+	
 }
 
 $(document).ready(main);
