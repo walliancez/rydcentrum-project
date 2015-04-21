@@ -9,7 +9,13 @@
 
 function main(){
 	var windows = $('.slide img');
-	windows.each(function(){
+	var $container = $('.slide-container');
+
+	$container.masonry({
+		columnWidth: 200,
+		itemSelector: '.slide'
+	});
+	/*windows.each(function(){
 		if(this.height > this.width){
 			$(this).width("initial")
 			$(this).height("100%");
@@ -22,6 +28,8 @@ function main(){
 	});
 
 	//Denna del gör samma som den översta fast bara när fönstret skalas om
+
+	
 	$(window).resize(function(){
 		var windows = $('.slide img');
 			windows.each(function(){
@@ -36,6 +44,7 @@ function main(){
 				$(this).css("top", height / 2 - $(this).height() / 2)
 			});
 	});
+*/
 	$('#icondiv').fitText();
 }
 
